@@ -1,10 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <HelloWorld :msg="state.msg" @onHelloClick="onHelloClick" />
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { reactive } from '@vue/reactivity';
+import HelloWorld from 'comps/HelloWorld.vue'
+
+const state = reactive({
+  msg: 'Hola Vue3'
+});
+
+const onHelloClick = () => {
+  state.msg = 'Yo Vue3'
+};
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
