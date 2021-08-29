@@ -2,14 +2,12 @@
   <!-- <Comp @onCompClick="onCompClick"></Comp> -->
   <h1>{{ msg }}</h1>
 
-  <button type="button" @click="state.count++">count is: {{ state.count }}</button>
-  <el-button @click="onHelloClick">hello emit</el-button>
-  <el-input></el-input>
+  <el-button @click="state.count++">count is: {{ state.count }}</el-button>
 </template>
 
 <script setup>
 // 1. 组件直接导入，直接使用
-import Comp from './Comp.vue'
+// import Comp from './Comp.vue'
 import { reactive } from 'vue'
 
 // 2. props 定义

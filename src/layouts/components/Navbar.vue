@@ -1,10 +1,9 @@
 <template>
   <div class="navbar">
     <div class="right-menu">
-      <el-dropdown class="avatar-container" trigger="click">
+      <el-dropdown class="avatar-container">
         <div class="avatar-wrapper">
           <img src="/src/assets/logo.png" class="user-avatar" />
-          <i class="el-icon-arrow-down el-icon--right"></i>
         </div>
         <template #dropdown>
           <el-dropdown-menu>
@@ -28,6 +27,7 @@
 <style lang="scss" scoped>
 .navbar {
   height: 50px;
+  padding: 0 1rem;
   overflow: hidden;
   position: relative;
   background: #fff;

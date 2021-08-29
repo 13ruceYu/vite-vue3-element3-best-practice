@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HelloWorld msg="Hola"></HelloWorld>
+    <HelloWorld msg="Hola Vue3"></HelloWorld>
   </div>
 </template>
 
 <script setup>
-  import HelloWorld from 'comps/HelloWorld.vue'
+import HelloWorld from 'comps/HelloWorld.vue'
 </script>
 

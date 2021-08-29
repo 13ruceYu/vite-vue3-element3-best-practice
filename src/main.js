@@ -6,7 +6,6 @@ import element3 from './plugins/element3';
 
 import './styles/index.scss'
 
-
 const app = createApp(App);
 app.use(router)
 app.use(store)
